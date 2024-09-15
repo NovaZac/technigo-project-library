@@ -3,11 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Don't forget to connect the CSS file -->
-  <title>Library</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Recipe Collection</title>
 </head>
 <body>
-  <h1>Library</h1>
-  <!-- Don't forget to connect the JavaScript file -->
+  <h1>Recipe Collection</h1>
+
+  <span class="filterfield">
+
+    <!-- Buttons for filtering -->
+    <div class="filter">
+      <h3>Filter by Kitchen</h3>
+      <button id="filter-all">All</button>
+      <button id="filter-italian">Italy</button>
+      <button id="filter-american">America</button>
+      <button id="filter-asian">Asia</button>
+      <button id="filter-other">Other</button>
+    </div>
+
+    <!-- Buttons for sorting -->
+    <div class="timesort">
+      <h3>Sort on Time</h3>
+      <button id="shortest-time">Shortest</button>
+      <button id="longest-time">Longest</button>
+    </div>
+
+    <!-- Button for randomize a recipe -->
+    <div class="random">
+      <h3>Randomize</h3>
+      <button id="randomRecipe">Select Random Recipe</button>
+    </div>
+
+    <!-- Search field for recipes -->
+    <div class="searchField">
+      <h3>Search</h3>
+      <input type="search" id="search-field" placeholder="Search recipes or ingredients">
+    </div>
+  </span>
+
+  <!-- div for recipes in javascript   -->
+  <div class="recipeList" id="recipe-list"></div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,197 +1,9 @@
-/*Here we have created two different arrays that you can work with if you want.
-If you choose to create your own arrays with elements, just make sure to create
-some properties that is possible to filter and sort.
 
-Remember to remove code you don't need.
-*/
-
-const books = [
-  {
-    title: 'The Great Gatsby',
-    author: 'F. Scott Fitzgerald',
-    year: 1925,
-    genre: 'Fiction',
-    rating: 4.2,
-    description:
-      'A classic novel set in the Roaring Twenties, it explores themes of wealth, love, and the American Dream through the enigmatic Jay Gatsby.',
-    image: './books-images/the-great-gatsby.jpg'
-  },
-  {
-    title: 'To Kill a Mockingbird',
-    author: 'Harper Lee',
-    year: 1960,
-    genre: 'Fiction',
-    rating: 4.5,
-    description:
-      'Set in the American South, this novel tackles issues of racism and injustice through the eyes of young Scout Finch.',
-    image: './books-images/to-kill-a-mockingbird.jpg'
-  },
-  {
-    title: '1984',
-    author: 'George Orwell',
-    year: 1949,
-    genre: 'Science Fiction',
-    rating: 4.4,
-    description:
-      'A dystopian classic that explores totalitarianism and the consequences of a surveillance state in a bleak future.',
-    image: './books-images/1984.jpg'
-  },
-  {
-    title: 'Pride and Prejudice',
-    author: 'Jane Austen',
-    year: 1813,
-    genre: 'Fiction',
-    rating: 4.25,
-    description:
-      'A timeless romance novel that examines societal expectations and the misunderstandings that can arise from pride and prejudice.',
-    image: './books-images/pride-and-prejudice.jpg'
-  },
-  {
-    title: 'The Catcher in the Rye',
-    author: 'J.D. Salinger',
-    year: 1951,
-    genre: 'Fiction',
-    rating: 4,
-    description:
-      'Narrated by the teenage Holden Caulfield, the novel explores themes of alienation and the search for authenticity.',
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Hobbit',
-    author: 'J.R.R. Tolkien',
-    year: 1937,
-    genre: 'Fantasy',
-    rating: 4.6,
-    description:
-      'A fantasy adventure novel that follows Bilbo Baggins on a quest to help a group of dwarves reclaim their homeland from a dragon.',
-    image: './books-images/the-hobbit.jpg'
-  },
-  {
-    title: "Harry Potter and the Sorcerer's Stone",
-    author: 'J.K. Rowling',
-    year: 1997,
-    genre: 'Fantasy',
-    rating: 4.7,
-    description:
-      'The first book in the beloved Harry Potter series, it introduces readers to the magical world of Hogwarts and the young wizard Harry Potter.',
-    image: "./books-images/harry-potter-and-the-sorcerer'.jpg"
-  },
-  {
-    title: 'Moby-Dick',
-    author: 'Herman Melville',
-    year: 1851,
-    genre: 'Adventure',
-    rating: 4.1,
-    description:
-      'An epic tale of obsession, revenge, and the relentless pursuit of the great white whale, Moby Dick.',
-    image: './books-images/moby-dick.jpg'
-  },
-  {
-    title: 'The Lord of the Rings: The Fellowship of the Ring',
-    author: 'J.R.R. Tolkien',
-    year: 1954,
-    genre: 'Fantasy',
-    rating: 4.55,
-    description:
-      'The first volume of the epic fantasy trilogy follows Frodo Baggins and the Fellowship on their quest to destroy the One Ring.',
-    image: './books-images/the-lord-of-the-rings.jpg'
-  },
-  {
-    title: 'The Shining',
-    author: 'Stephen King',
-    year: 1977,
-    genre: 'Horror',
-    rating: 4.3,
-    description:
-      "A psychological horror novel that tells the story of the Torrance family's terrifying experiences at the haunted Overlook Hotel.",
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Chronicles of Narnia: The Lion, the Witch and the Wardrobe',
-    author: 'C.S. Lewis',
-    year: 1950,
-    genre: 'Fantasy',
-    rating: 4.15,
-    description:
-      'The first book in the Chronicles of Narnia series, it follows the adventures of children who discover the magical land of Narnia.',
-    image: './books-images/the-chronicles-of-narnia.jpg'
-  },
-  {
-    title: 'The Da Vinci Code',
-    author: 'Dan Brown',
-    year: 2003,
-    genre: 'Mystery',
-    rating: 3.8,
-    description:
-      'A gripping mystery thriller that follows Harvard symbologist Robert Langdon as he unravels the secrets of the Da Vinci Code.',
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Alchemist',
-    author: 'Paulo Coelho',
-    year: 1988,
-    genre: 'Fiction',
-    rating: 4.25,
-    description:
-      'A philosophical novel that tells the story of Santiago, a shepherd boy, on his quest to discover his personal legend.',
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Hunger Games',
-    author: 'Suzanne Collins',
-    year: 2008,
-    genre: 'Science Fiction',
-    rating: 4.3,
-    description:
-      "In a dystopian future, Katniss Everdeen becomes a symbol of rebellion when she volunteers to take her sister's place in the brutal Hunger Games.",
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Girl with the Dragon Tattoo',
-    author: 'Stieg Larsson',
-    year: 2005,
-    genre: 'Mystery',
-    rating: 4.1,
-    description:
-      'A gripping mystery novel featuring investigative journalist Mikael Blomkvist and the enigmatic hacker Lisbeth Salander.',
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Road',
-    author: 'Cormac McCarthy',
-    year: 2006,
-    genre: 'Dystopian',
-    rating: 4,
-    description:
-      "Set in a post-apocalyptic world, it follows a father and son's harrowing journey to survive and find safety.",
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: "The Hitchhiker's Guide to the Galaxy",
-    author: 'Douglas Adams',
-    year: 1979,
-    genre: 'Science Fiction',
-    rating: 4.35,
-    description:
-      "A comedic science fiction series that follows the misadventures of Arthur Dent after Earth's destruction.",
-    image: './books-images/unknown.jpg'
-  },
-  {
-    title: 'The Giver',
-    author: 'Lois Lowry',
-    year: 1993,
-    genre: 'Dystopian',
-    rating: 4.12,
-    description:
-      'A dystopian novel set in a seemingly perfect society where young Jonas discovers the dark truth beneath the surface.',
-    image: './books-images/unknown.jpg'
-  }
-]
-
-const recipes = [
+//list with all the recipes
+const recipe = [
   {
     name: 'Individual vegetarian lasagnes',
-    cuisineType: ['italian'],
+    cuisineType: ['Italian'],
     ingredients: [
       '1.2 kg cherry tomatoes',
       '5 sprigs of fresh thyme',
@@ -252,7 +64,7 @@ const recipes = [
   },
   {
     name: "Vegetarian Shepherd's Pie",
-    cuisineType: ['Balanced', 'High-Fiber'],
+    cuisineType: ['Balanced', ' High-Fiber'],
     ingredients: [
       '2 tablespoons extra-virgin olive oil',
       '1 large onion, finely diced',
@@ -298,7 +110,7 @@ const recipes = [
   },
   {
     name: 'Baked Chicken',
-    cuisineType: ['american'],
+    cuisineType: ['American'],
     ingredients: [
       '6 bone-in chicken breast halves, or 6 chicken thighs and wings, skin-on',
       '1/2 teaspoon coarse salt',
@@ -312,7 +124,7 @@ const recipes = [
   },
   {
     name: 'Deep Fried Fish Bones',
-    cuisineType: ['south east asian'],
+    cuisineType: ['South east asian'],
     ingredients: ['8 small whiting fish or smelt', '4 cups vegetable oil'],
     source: 'Serious Eats',
     totalTime: 31,
@@ -321,7 +133,7 @@ const recipes = [
   },
   {
     name: 'Burnt-Scallion Fish',
-    cuisineType: ['chinese'],
+    cuisineType: ['Chinese'],
     ingredients: [
       '2 bunches scallions',
       '8 tbsp. butter',
@@ -334,7 +146,7 @@ const recipes = [
   },
   {
     name: 'Curry-Crusted Fish',
-    cuisineType: ['south east asian'],
+    cuisineType: ['South east asian'],
     ingredients: [
       '3 slices bread , about 85g/3oz in total',
       '1 lime',
@@ -348,7 +160,7 @@ const recipes = [
   },
   {
     name: 'Meat Stock',
-    cuisineType: 'american',
+    cuisineType: ['American'],
     ingredients: [
       '2.5 pounds beef marrow bones',
       '1 large onion, quartered',
@@ -370,7 +182,7 @@ const recipes = [
   },
   {
     name: 'Homemade Meat Broth',
-    cuisineType: 'american',
+    cuisineType: ['American'],
     ingredients: [
       '1 teaspoon salt',
       '1 carrot, peeled',
@@ -387,8 +199,8 @@ const recipes = [
     image: './recipe-images/meat.jpg'
   },
   {
-    name: 'Spice-Rubbed Grilled Flap Meat (Sirloin Tip) Recipe',
-    cuisineType: 'south-american',
+    name: 'Spice-Rubbed Grilled Flap Meat',
+    cuisineType: ['South-american'],
     ingredients: [
       '1 tablespoon whole black peppercorns, toasted',
       '1 teaspoon coriander seed, toasted',
@@ -407,3 +219,180 @@ const recipes = [
     image: './recipe-images/grilled.jpg'
   }
 ]
+
+function displayRecipes(recipes){
+  //look after the HTML-element where we want to put our arrays at 
+  const recipeList = document.getElementById("recipe-list");
+
+  //create a empty string where the content will locate
+  let html = '';
+
+  //go through all the recipes with an forEach loop
+  recipes.forEach((recipe) => {
+    html += `
+      <a href="${recipe.url}" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="recipe">
+          <img src="${recipe.image}" alt="${recipe.name}" width="100%">
+          <h2>${recipe.name}</h2>
+          <hr class="separator">
+          <p><strong>Cuisine Type: </strong>${recipe.cuisineType}</p>
+          <p><strong>Source: </strong>${recipe.source}</p>
+          <p><strong>Total Time: </strong>${recipe.totalTime ? recipe.totalTime + ' minutes' : 'Unknown'}</p>
+          <hr class="separator">
+          <p><strong>Ingredients: </strong></p>
+          <ul>
+            ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+          </ul>
+        </div>
+      </a>
+    `
+  });
+
+  recipeList.innerHTML = html;
+
+};
+
+displayRecipes(recipe)
+
+//function for sort button shortest-longest time cooking 
+function sortOnShortest(recipesTime) {
+  recipesTime.sort((a, b) => a.totalTime - b.totalTime);
+
+  displayRecipes(recipesTime);
+};
+
+//function for sort button longest-shortest time cooking 
+function sortOnLongest(recipesTime) {
+  recipesTime.sort((a, b) => b.totalTime - a.totalTime);
+
+  displayRecipes(recipesTime);
+};
+
+//Event listener for make it possible to add a filters at the same time
+document.getElementById("shortest-time").addEventListener("click", () => {
+  sortOnShortest(recipe);  // Sort recpies when button activated 
+});
+
+document.getElementById("longest-time").addEventListener("click", () => {
+  sortOnLongest(recipe);  // Sort recpies when button activated 
+});
+
+//show all recipes 
+document.getElementById("filter-all").addEventListener("click", () => {
+ displayRecipes(recipe);
+});
+
+//filter only italian recipes 
+function filterItalian (recipes) {
+  return recipes.filter(recipe => recipe.cuisineType.includes('Italian'));
+};
+
+document.getElementById("filter-italian").addEventListener("click", () => {
+  const filteredItalianRecipes = filterItalian(recipe);
+  displayRecipes(filteredItalianRecipes)
+});
+
+//filter only american or south american recipes
+function filterAmerican (recipes) {
+  return recipes.filter(recipe => 
+    recipe.cuisineType.includes('American') ||
+    recipe.cuisineType.includes('South-american')
+  );
+};
+
+document.getElementById("filter-american").addEventListener("click", () => {
+  const filteredAmericanRecipes = filterAmerican(recipe);
+  displayRecipes(filteredAmericanRecipes)
+});
+
+//filter only asian recipes
+function filterAsian (recipes) {
+  return recipes.filter(recipe =>
+    recipe.cuisineType.includes('Chinese') ||
+    recipe.cuisineType.includes('South east asian')
+  ); 
+};
+
+document.getElementById("filter-asian").addEventListener("click", () => {
+  const filteredAsianRecipes = filterAsian(recipe);
+  displayRecipes(filteredAsianRecipes)
+});
+
+//filter the rest of the cuisines
+function filterOtherCuisines(recipes) {
+  return recipes.filter(recipe => 
+    recipe.cuisineType.includes('Balanced') ||
+    recipe.cuisineType.includes('Low-Carb')
+  );
+};
+
+document.getElementById("filter-other").addEventListener("click", () => {
+  const filteredOtherKitchens = filterOtherCuisines(recipe);
+  displayRecipes(filteredOtherKitchens)
+});
+
+//two variables that collect all the buttons in a container within class
+const activeFilterButtons = document.querySelectorAll(".filter button");
+const activeSortButtons = document.querySelectorAll(".timesort button");
+
+//add eventlistener for each button
+activeFilterButtons.forEach (button => {
+  button.addEventListener('click', function() {
+    activeFilterButtons.forEach(btn => btn.classList.remove('active'));
+    //loop that goes through every button and makes sure that only one is active at a time
+
+    this.classList.add('active');
+    //adds the active class to the button that was just clicked
+  });
+});
+
+//add eventlistener for each button
+activeSortButtons.forEach (button => {
+  button.addEventListener('click', function(){
+    activeSortButtons.forEach(btn => btn.classList.remove('active'));
+    //loop through every button and makes sure only one is active at the same time
+
+    this.classList.add('active');
+    //add active class to the button that was clicked
+  });
+});
+
+//function that filter recipes name, cusine type and ingridients 
+function searchRecipes(keyword, recipes) {
+  return recipes.filter(recipe => {
+    return (
+      recipe.name.toLowerCase().includes(keyword.toLowerCase()) ||
+      recipe.cuisineType.some(cuisine => cuisine.trim().toLowerCase().includes(keyword.toLowerCase())) ||
+      recipe.ingredients.some(ingredient => ingredient.toLowerCase().includes(keyword.toLowerCase()))
+      //.some for filtering inside the arrays 
+    );
+  });
+}
+
+document.getElementById('search-field').addEventListener("input", function () {
+  const searchTerm = this.value; 
+  //gets the value from input field
+  const filteredRecipes = searchRecipes(searchTerm, recipe); 
+  //filter the recipes
+  displayRecipes(filteredRecipes); 
+  //show the filtered recipes
+});
+
+//function for randomize a recipe
+function getRandomRecipe (recipes) {
+  const randomIndex = Math.floor(Math.random() * recipes.length);
+  return recipes[randomIndex]; 
+  //return the random selected recipe
+}
+
+//eventlistener for random button
+document.getElementById('randomRecipe').addEventListener("click", function() {
+
+  activeFilterButtons.forEach(btn => btn.classList.remove('active'));
+  activeSortButtons.forEach(btn => btn.classList.remove('active'));
+  //removes the other filter and sort buttons when random is clicked
+
+  const randomRecipe = getRandomRecipe(recipe);
+  displayRecipes([randomRecipe]);
+  //show the selected recipe
+});
