@@ -1,10 +1,9 @@
 # Library
+Recipe Collection is a web application that enables users to search and filter a diverse array of recipes based on various criteria. The app features options to filter recipes by cuisine type, sort them by cooking time, and search by ingredients or recipe names. Additionally, it includes a random recipe generator for users seeking new cooking ideas.
 
-Replace this readme with your own information about the project. You can include things like:
+The project was developed with an initial focus on core functionalities: search, filtering, sorting, and random recipe generation. HTML and CSS were employed for the structure and styling of the app, following a design blueprint from Figma. JavaScript was used to manage dynamic features. Notable elements include a search bar for filtering recipes, sorting buttons for cooking time, and a random recipe generator.
 
-- Brief description of the assignment
-- How you approached the task, what tools and techniques you used, and how you planned it
-- If you had more time, what would be next?
+Future enhancements could involve more advanced filtering options and further design improvements.
 
 ## View it live
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://recipecollectionn.netlify.app/
